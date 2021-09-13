@@ -1,0 +1,32 @@
+using System;
+class Delenie{
+  static void Main() {
+ //целые
+int a = 20;
+int b = 4;
+// с плавающей запятой
+Console.WriteLine((double)a / b);  
+    float c = 4.5F;
+    float d = 1.5F;
+   Console.WriteLine( c / d );
+   // я не знаю, правильно ли это ¯\_(ツ)_/¯
+    Console.WriteLine(sizeof(double));
+    Console.WriteLine(sizeof(float));
+     try
+    {
+        int x = 5;
+        int y = x / 0;
+        Console.WriteLine($"Результат: {y}");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($"Исключение: {ex.Message}");
+        Console.WriteLine($"Метод: {ex.TargetSite}");
+        Console.WriteLine($"Трассировка стека: {ex.StackTrace}");
+    }
+ 
+    Console.Read();
+   {
+        }
+  }
+}
