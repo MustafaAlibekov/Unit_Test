@@ -1,0 +1,17 @@
+import sys
+
+try:
+    print("Введите первое число")
+    num1 = float(input())
+
+    print("Введите первое число")
+    num2 = float(input())
+
+    res = num1 / num2
+    print("Result: " + str(res))
+except Exception as e:
+    print("Error! " + str(e))
+
+
+print("Размер данных integer: " + str(sys.getsizeof(int())))
+print("Размер данных float: " + str(sys.getsizeof(float())))
