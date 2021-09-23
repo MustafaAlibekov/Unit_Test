@@ -1,0 +1,21 @@
+#include <opencv2/core/core.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <string>
+using namespace cv;
+using namespace std;
+int main()
+{
+	int height = 520;
+	int width = 820;
+	Mat img(height, width, CV_8UC3);
+	Point textOrg(100, img.rows / 2);
+	int fontFace = FONT_HERSHEY_SCRIPT_SIMPLEX;
+	double fontScale = 2;
+	Scalar color(200, 100, 50);
+	putText(img, "OpenCV Step By Step", textOrg, fontFace, fontScale, color);
+	namedWindow("Hello world", 0);
+	imshow("Hello world", img);
+	waitKey(0);
+	return 0;
+}
