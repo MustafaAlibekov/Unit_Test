@@ -10,10 +10,14 @@ int main()
 	int width = 820;
 	Mat img(height, width, CV_8UC3);
 	Point textOrg(100, img.rows / 2);
-	int fontFace = FONT_HERSHEY_SCRIPT_SIMPLEX;
+	int fontFace = FONT_HERSHEY_TRIPLEX;
 	double fontScale = 2;
-	Scalar color(200, 100, 50);
-	putText(img, "OpenCV Step By Step", textOrg, fontFace, fontScale, color);
+	Scalar color(255, 20, 147);
+	putText(img, "git_hub", textOrg, fontFace, fontScale, color);
+	putText(img, "", textOrg, fontFace, fontScale, color);
+	putText(img, "", textOrg, fontFace, fontScale, color);
+	putText(img, "", textOrg, fontFace, fontScale, color);
+	putText(img, "", textOrg, fontFace, fontScale, color);
 	namedWindow("Hello world", 0);
 	imshow("Hello world", img);
 	waitKey(0);
