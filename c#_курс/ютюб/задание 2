@@ -15,6 +15,7 @@ namespace ConsoleApp7
             int sum = a + b + c;
             int mult = a * b * c;
             Console.WriteLine($"sum = {sum}, mult = {mult}");
+            Console.ReadLine();
         }
     }
 }
